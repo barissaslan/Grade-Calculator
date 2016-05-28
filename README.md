@@ -1,5 +1,5 @@
 # Grade-Calculator
-Grade calculator for University students.
+Grade calculator for college students.
 
 ![alt tag](https://github.com/barissaslan/Grade-Calculator/blob/master/Images/pic1.png)
 
