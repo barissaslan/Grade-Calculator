@@ -1,0 +1,48 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Grade_Calculator.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FirstRanges" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;90&lt;/string&gt;
+  &lt;string&gt;85&lt;/string&gt;
+  &lt;string&gt;80&lt;/string&gt;
+  &lt;string&gt;70&lt;/string&gt;
+  &lt;string&gt;60&lt;/string&gt;
+  &lt;string&gt;55&lt;/string&gt;
+  &lt;string&gt;50&lt;/string&gt;
+  &lt;string&gt;40&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="LastRanges" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;100&lt;/string&gt;
+  &lt;string&gt;90&lt;/string&gt;
+  &lt;string&gt;85&lt;/string&gt;
+  &lt;string&gt;80&lt;/string&gt;
+  &lt;string&gt;70&lt;/string&gt;
+  &lt;string&gt;60&lt;/string&gt;
+  &lt;string&gt;55&lt;/string&gt;
+  &lt;string&gt;50&lt;/string&gt;
+  &lt;string&gt;40&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="LetterGrades" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;AA&lt;/string&gt;
+  &lt;string&gt;BA&lt;/string&gt;
+  &lt;string&gt;BB&lt;/string&gt;
+  &lt;string&gt;CB&lt;/string&gt;
+  &lt;string&gt;CC&lt;/string&gt;
+  &lt;string&gt;DC&lt;/string&gt;
+  &lt;string&gt;DD&lt;/string&gt;
+  &lt;string&gt;FD&lt;/string&gt;
+  &lt;string&gt;FF&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
