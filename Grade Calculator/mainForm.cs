@@ -17,10 +17,17 @@ namespace Grade_Calculator
         RoundButton btnAddRow = new RoundButton(Properties.Resources.add, 30, 30);
         RoundButton btnRemoveRow = new RoundButton(Properties.Resources.remove, 30, 30);
         RoundButton btnResetValue = new RoundButton(Properties.Resources.reset, 30, 30);
-        double averageGrade;
         // for calculating to extra exams or quizes
         List<NumericUpDown> listNmrc = new List<NumericUpDown>();
         List<NumericUpDown> listNmrcWeight = new List<NumericUpDown>();
+
+        private double averageGrade;
+        public double AverageGrade
+        {
+            get { return Math.Round(averageGrade); }
+            set { averageGrade = value; }
+        }
+
 
         private void mainForm_Load(object sender, EventArgs e)
         {
@@ -53,6 +60,7 @@ namespace Grade_Calculator
             nmrc.Font = new Font("Segoe UI", 12f, FontStyle.Bold);
             nmrc.Size = new Size(71, 29);
             nmrc.Location = new Point(nmrc1.Left, y);
+            nmrc.Enter += NumericUpDown_Enter;
             listNmrc.Add(nmrc);
             this.Controls.Add(nmrc);
 
@@ -60,6 +68,7 @@ namespace Grade_Calculator
             nmrcWeight.Font = new Font("Segoe UI", 12f, FontStyle.Bold);
             nmrcWeight.Size = new Size(71, 29);
             nmrcWeight.Location = new Point(nmrc1.Left + 100, y);
+            nmrcWeight.Enter += NumericUpDown_Enter;
             listNmrcWeight.Add(nmrcWeight);
             this.Controls.Add(nmrcWeight);
 
@@ -146,18 +155,19 @@ namespace Grade_Calculator
 
         private void btnCalculate_Click(object sender, EventArgs e)
         {
-            averageGrade = (double)(nmrc1.Value * nmrcWeight1.Value) / 100.0 + (double)(nmrc2.Value * nmrWeight2.Value) / 100.0;
+            AverageGrade = (double)(nmrc1.Value * nmrcWeight1.Value) / 100.0 + (double)(nmrc2.Value * nmrWeight2.Value) / 100.0;
 
+            // extra grades calculating..
             for (int i = 0; i < listNmrc.Count; i++)
             {
-                averageGrade += (double)(listNmrc[i].Value * listNmrcWeight[i].Value) / 100.0;
+                AverageGrade += (double)(listNmrc[i].Value * listNmrcWeight[i].Value) / 100.0;
             }
 
-            lblGrade.Text = averageGrade.ToString();
-            lblLetterGrade.Text = getLetterGrade((decimal)averageGrade);
+            lblGrade.Text = AverageGrade.ToString();
+            lblLetterGrade.Text = getLetterGrade(AverageGrade);
         }
 
-        private string getLetterGrade(decimal averageGrade)
+        private string getLetterGrade(double averageGrade)
         {
             int[] max = new int[9];
             string[] letter = new string[9];
@@ -172,6 +182,12 @@ namespace Grade_Calculator
             }
 
             return letter[0];
+        }
+
+        private void NumericUpDown_Enter(object sender, EventArgs e)
+        {
+            NumericUpDown nmr = (NumericUpDown)sender;
+            nmr.Select(0, nmr.Value.ToString().Length);
         }
     }
 }
