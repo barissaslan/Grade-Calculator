@@ -67,6 +67,7 @@
             this.nmrWeight2.Name = "nmrWeight2";
             this.nmrWeight2.Size = new System.Drawing.Size(71, 29);
             this.nmrWeight2.TabIndex = 3;
+            this.nmrWeight2.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // nmrcWeight1
             // 
@@ -75,6 +76,7 @@
             this.nmrcWeight1.Name = "nmrcWeight1";
             this.nmrcWeight1.Size = new System.Drawing.Size(71, 29);
             this.nmrcWeight1.TabIndex = 1;
+            this.nmrcWeight1.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // nmrc2
             // 
@@ -83,6 +85,7 @@
             this.nmrc2.Name = "nmrc2";
             this.nmrc2.Size = new System.Drawing.Size(71, 29);
             this.nmrc2.TabIndex = 2;
+            this.nmrc2.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // nmrc1
             // 
@@ -91,6 +94,7 @@
             this.nmrc1.Name = "nmrc1";
             this.nmrc1.Size = new System.Drawing.Size(71, 29);
             this.nmrc1.TabIndex = 0;
+            this.nmrc1.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // label1
             // 
