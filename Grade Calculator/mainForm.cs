@@ -163,7 +163,7 @@ namespace Grade_Calculator
                 AverageGrade += (double)(listNmrc[i].Value * listNmrcWeight[i].Value) / 100.0;
             }
 
-            lblGrade.Text = AverageGrade.ToString();
+            lblGrade.Text = averageGrade.ToString();
             lblLetterGrade.Text = getLetterGrade(AverageGrade);
         }
 
