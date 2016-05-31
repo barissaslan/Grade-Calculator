@@ -31,9 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
             this.nmrWeight2 = new System.Windows.Forms.NumericUpDown();
-            this.nmrcWeight1 = new System.Windows.Forms.NumericUpDown();
-            this.nmrc2 = new System.Windows.Forms.NumericUpDown();
-            this.nmrc1 = new System.Windows.Forms.NumericUpDown();
+            this.nmrWeight1 = new System.Windows.Forms.NumericUpDown();
+            this.nmr2 = new System.Windows.Forms.NumericUpDown();
+            this.nmr1 = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
             this.btnCalculate = new System.Windows.Forms.Button();
@@ -53,9 +53,9 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.contextCalculate = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.nmrWeight2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nmrcWeight1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nmrc2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nmrc1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmrWeight1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmr2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmr1)).BeginInit();
             this.toolStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -69,32 +69,32 @@
             this.nmrWeight2.TabIndex = 3;
             this.nmrWeight2.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
-            // nmrcWeight1
+            // nmrWeight1
             // 
-            this.nmrcWeight1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.nmrcWeight1.Location = new System.Drawing.Point(116, 50);
-            this.nmrcWeight1.Name = "nmrcWeight1";
-            this.nmrcWeight1.Size = new System.Drawing.Size(71, 29);
-            this.nmrcWeight1.TabIndex = 1;
-            this.nmrcWeight1.Enter += new System.EventHandler(this.NumericUpDown_Enter);
+            this.nmrWeight1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.nmrWeight1.Location = new System.Drawing.Point(116, 50);
+            this.nmrWeight1.Name = "nmrWeight1";
+            this.nmrWeight1.Size = new System.Drawing.Size(71, 29);
+            this.nmrWeight1.TabIndex = 1;
+            this.nmrWeight1.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
-            // nmrc2
+            // nmr2
             // 
-            this.nmrc2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.nmrc2.Location = new System.Drawing.Point(16, 85);
-            this.nmrc2.Name = "nmrc2";
-            this.nmrc2.Size = new System.Drawing.Size(71, 29);
-            this.nmrc2.TabIndex = 2;
-            this.nmrc2.Enter += new System.EventHandler(this.NumericUpDown_Enter);
+            this.nmr2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.nmr2.Location = new System.Drawing.Point(16, 85);
+            this.nmr2.Name = "nmr2";
+            this.nmr2.Size = new System.Drawing.Size(71, 29);
+            this.nmr2.TabIndex = 2;
+            this.nmr2.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
-            // nmrc1
+            // nmr1
             // 
-            this.nmrc1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.nmrc1.Location = new System.Drawing.Point(16, 50);
-            this.nmrc1.Name = "nmrc1";
-            this.nmrc1.Size = new System.Drawing.Size(71, 29);
-            this.nmrc1.TabIndex = 0;
-            this.nmrc1.Enter += new System.EventHandler(this.NumericUpDown_Enter);
+            this.nmr1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.nmr1.Location = new System.Drawing.Point(16, 50);
+            this.nmr1.Name = "nmr1";
+            this.nmr1.Size = new System.Drawing.Size(71, 29);
+            this.nmr1.TabIndex = 0;
+            this.nmr1.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // label1
             // 
@@ -122,7 +122,8 @@
             this.btnCalculate.Location = new System.Drawing.Point(14, 379);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(130, 35);
-            this.btnCalculate.TabIndex = 15;
+            this.btnCalculate.TabIndex = 7;
+            this.btnCalculate.TabStop = false;
             this.btnCalculate.Text = "Calculate";
             this.btnCalculate.UseVisualStyleBackColor = true;
             this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
@@ -153,6 +154,7 @@
             this.panelRemoveRow.Name = "panelRemoveRow";
             this.panelRemoveRow.Size = new System.Drawing.Size(30, 30);
             this.panelRemoveRow.TabIndex = 5;
+            this.panelRemoveRow.TabStop = true;
             // 
             // panelAddRow
             // 
@@ -160,6 +162,7 @@
             this.panelAddRow.Name = "panelAddRow";
             this.panelAddRow.Size = new System.Drawing.Size(30, 30);
             this.panelAddRow.TabIndex = 4;
+            this.panelAddRow.TabStop = true;
             // 
             // panelResetValue
             // 
@@ -167,6 +170,7 @@
             this.panelResetValue.Name = "panelResetValue";
             this.panelResetValue.Size = new System.Drawing.Size(30, 30);
             this.panelResetValue.TabIndex = 6;
+            this.panelResetValue.TabStop = true;
             // 
             // toolStrip1
             // 
@@ -259,9 +263,9 @@
             this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.nmrWeight2);
-            this.Controls.Add(this.nmrcWeight1);
-            this.Controls.Add(this.nmrc2);
-            this.Controls.Add(this.nmrc1);
+            this.Controls.Add(this.nmrWeight1);
+            this.Controls.Add(this.nmr2);
+            this.Controls.Add(this.nmr1);
             this.Controls.Add(this.lblLetterGrade);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblGrade);
@@ -280,9 +284,9 @@
             this.Text = "Grade Calculator";
             this.Load += new System.EventHandler(this.mainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nmrWeight2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nmrcWeight1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nmrc2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nmrc1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmrWeight1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmr2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmr1)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.contextMenuStrip1.ResumeLayout(false);
@@ -294,9 +298,9 @@
         #endregion
 
         private System.Windows.Forms.NumericUpDown nmrWeight2;
-        private System.Windows.Forms.NumericUpDown nmrcWeight1;
-        private System.Windows.Forms.NumericUpDown nmrc2;
-        private System.Windows.Forms.NumericUpDown nmrc1;
+        private System.Windows.Forms.NumericUpDown nmrWeight1;
+        private System.Windows.Forms.NumericUpDown nmr2;
+        private System.Windows.Forms.NumericUpDown nmr1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.Button btnCalculate;
