@@ -1,7 +1,6 @@
 ﻿using Exam_Mark_Calculater;
 using System;
 using System.Collections.Generic;
-using System.Collections.Specialized;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -21,13 +20,14 @@ namespace Grade_Calculator
         List<NumericUpDown> listNmrc = new List<NumericUpDown>();
         List<NumericUpDown> listNmrcWeight = new List<NumericUpDown>();
 
+        int tabIndex;
+
         private double averageGrade;
         public double AverageGrade
         {
             get { return Math.Round(averageGrade); }
             set { averageGrade = value; }
         }
-
 
         private void mainForm_Load(object sender, EventArgs e)
         {
@@ -39,6 +39,28 @@ namespace Grade_Calculator
 
             btnResetValue.Click += BtnResetRows_Click;
             panelResetValue.Controls.Add(btnResetValue);
+
+            #region Tab Index
+            tabIndex = nmrWeight2.TabIndex;
+            panelAddRow.TabIndex = 1 + tabIndex;
+            panelRemoveRow.TabIndex = 2 + tabIndex;
+            panelResetValue.TabIndex = 3 + tabIndex;
+            btnCalculate.TabIndex = 4 + tabIndex;
+            #endregion
+        }
+
+        private void btnCalculate_Click(object sender, EventArgs e)
+        {
+            averageGrade = (double)(nmr1.Value * nmrWeight1.Value) / 100.0 + (double)(nmr2.Value * nmrWeight2.Value) / 100.0;
+
+            // extra grades calculating..
+            for (int i = 0; i < listNmrc.Count; i++)
+            {
+                averageGrade += (double)(listNmrc[i].Value * listNmrcWeight[i].Value) / 100.0;
+            }
+
+            lblGrade.Text = averageGrade.ToString();
+            lblLetterGrade.Text = getLetterGrade(AverageGrade);
         }
 
         private void BtnAddRow_Click(object sender, EventArgs e)
@@ -55,11 +77,12 @@ namespace Grade_Calculator
             panelResetValue.Location = new Point(x + 80, y + 35);
 
             #region Dynamic Controls & Properties
-
+            shiftTabIndex(true);
             NumericUpDown nmrc = new NumericUpDown();
             nmrc.Font = new Font("Segoe UI", 12f, FontStyle.Bold);
             nmrc.Size = new Size(71, 29);
-            nmrc.Location = new Point(nmrc1.Left, y);
+            nmrc.Location = new Point(nmr1.Left, y);
+            nmrc.TabIndex = ++tabIndex;
             nmrc.Enter += NumericUpDown_Enter;
             listNmrc.Add(nmrc);
             this.Controls.Add(nmrc);
@@ -67,7 +90,8 @@ namespace Grade_Calculator
             NumericUpDown nmrcWeight = new NumericUpDown();
             nmrcWeight.Font = new Font("Segoe UI", 12f, FontStyle.Bold);
             nmrcWeight.Size = new Size(71, 29);
-            nmrcWeight.Location = new Point(nmrc1.Left + 100, y);
+            nmrcWeight.Location = new Point(nmr1.Left + 100, y);
+            nmrcWeight.TabIndex = ++tabIndex;
             nmrcWeight.Enter += NumericUpDown_Enter;
             listNmrcWeight.Add(nmrcWeight);
             this.Controls.Add(nmrcWeight);
@@ -100,13 +124,13 @@ namespace Grade_Calculator
         {
             foreach (Control item in this.Controls)
             {
-                if (NumericUpDown.Equals(item.GetType(), nmrc1.GetType()))
+                if (NumericUpDown.Equals(item.GetType(), nmr1.GetType()))
                     item.Text = "0";
             }
             lblGrade.Text = "";
             lblLetterGrade.Text = "";
 
-            nmrc1.Focus();
+            nmr1.Focus();
         }
 
         private void settings_Click(object sender, EventArgs e)
@@ -153,19 +177,13 @@ namespace Grade_Calculator
             return null;
         }
 
-        private void btnCalculate_Click(object sender, EventArgs e)
+        private void NumericUpDown_Enter(object sender, EventArgs e)
         {
-            AverageGrade = (double)(nmrc1.Value * nmrcWeight1.Value) / 100.0 + (double)(nmrc2.Value * nmrWeight2.Value) / 100.0;
-
-            // extra grades calculating..
-            for (int i = 0; i < listNmrc.Count; i++)
-            {
-                AverageGrade += (double)(listNmrc[i].Value * listNmrcWeight[i].Value) / 100.0;
-            }
-
-            lblGrade.Text = averageGrade.ToString();
-            lblLetterGrade.Text = getLetterGrade(AverageGrade);
+            NumericUpDown nmr = (NumericUpDown)sender;
+            nmr.Select(0, nmr.Value.ToString().Length);
         }
+
+       
 
         private string getLetterGrade(double averageGrade)
         {
@@ -184,10 +202,24 @@ namespace Grade_Calculator
             return letter[0];
         }
 
-        private void NumericUpDown_Enter(object sender, EventArgs e)
+        /// <param name="b">true: positive shifting, false: negative shifting</param>
+        private void shiftTabIndex(bool b)
         {
-            NumericUpDown nmr = (NumericUpDown)sender;
-            nmr.Select(0, nmr.Value.ToString().Length);
+            if (b)
+            {
+                panelAddRow.TabIndex += 2;
+                panelRemoveRow.TabIndex += 2;
+                panelResetValue.TabIndex += 2;
+                btnCalculate.TabIndex += 2;
+            }
+            else
+            {
+                panelAddRow.TabIndex -= 2;
+                panelRemoveRow.TabIndex -= 2;
+                panelResetValue.TabIndex -= 2;
+                btnCalculate.TabIndex -= 2;
+            }
+
         }
     }
 }
