@@ -9,7 +9,7 @@ namespace Grade_Calculator
             InitializeComponent();
         }
 
-        private string setLetters(int index)
+        private string getLetters(int index)
         {
             foreach (Control item in this.Controls)
             {
@@ -21,7 +21,7 @@ namespace Grade_Calculator
             return null;
         }
 
-        private string setFirstRanges(int index)
+        private string getFirstRanges(int index)
         {
             foreach (Control item in this.Controls)
             {
@@ -33,7 +33,7 @@ namespace Grade_Calculator
             return null;
         }
 
-        private string setLastRanges(int index)
+        private string getLastRanges(int index)
         {
             foreach (Control item in this.Controls)
             {
@@ -49,9 +49,9 @@ namespace Grade_Calculator
         {
             for (int i = 1; i < 10; i++)
             {
-                setFirstRanges(i);
-                setLastRanges(i);
-                setLetters(i);
+                getFirstRanges(i);
+                getLastRanges(i);
+                getLetters(i);
             }
         }
 
@@ -65,5 +65,10 @@ namespace Grade_Calculator
             this.DialogResult = DialogResult.Cancel;
         }
 
+        private void NumericUpDown_Enter(object sender, System.EventArgs e)
+        {
+            NumericUpDown nmr = (NumericUpDown)sender;
+            nmr.Select(0, nmr.Value.ToString().Length);
+        }
     }
 }

@@ -32,6 +32,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup />
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,6 +47,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="gradeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gradeForm.Designer.cs">
+      <DependentUpon>gradeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileLesson.cs" />
+    <Compile Include="lessonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lessonForm.Designer.cs">
+      <DependentUpon>lessonForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="mainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +77,12 @@
     <Compile Include="settingsForm.Designer.cs">
       <DependentUpon>settingsForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="gradeForm.resx">
+      <DependentUpon>gradeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lessonForm.resx">
+      <DependentUpon>lessonForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mainForm.resx">
       <DependentUpon>mainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -103,6 +123,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\Icons\settings.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Icons\lesson.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Icons\add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Icons\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Icons\clear.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

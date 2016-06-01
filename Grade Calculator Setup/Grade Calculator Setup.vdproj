@@ -3,7 +3,7 @@
 "VSVersion" = "3:800"
 "ProjectType" = "8:{978C614F-708E-4E1A-B201-565925725DBA}"
 "IsWebType" = "8:FALSE"
-"ProjectName" = "8:Setup1"
+"ProjectName" = "8:Grade Calculator Setup"
 "LanguageId" = "3:1033"
 "CodePage" = "3:1252"
 "UILanguageId" = "3:1033"
@@ -15,86 +15,86 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_166ED037E23347B2801BFD9C1CA7E8DE"
+        "MsmKey" = "8:_0453B1DE574F4D3D9ACBA6376E406B66"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_407C1D397A24416BBF09FA5456EABA6C"
+        "MsmKey" = "8:_09451A6E985848C18119823DA2F4D2B2"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_4B6F4FF1F4584BECB85CE0FE7958A7D3"
+        "MsmKey" = "8:_1A45C53B8D3C4104B47DC7C69774CB8A"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_4E383C5F4B8D47E9892E16ED74ACD8A8"
+        "MsmKey" = "8:_248FD8EAF5404717B8860937ADA7BE9B"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_5AB7419B389E4AF4BDB6752C8BF30571"
+        "MsmKey" = "8:_258D619C15DE4A1E91D0B1378D0ADDC4"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_6F9BFC8294C38EE39729374AF1D6DFBC"
-        "OwnerKey" = "8:_407C1D397A24416BBF09FA5456EABA6C"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_8B32321036454A8B840367F850C60C4C"
+        "MsmKey" = "8:_3F512F63A2C64DAEB542D32EE8D82395"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_CA55C36B680C4C1C8435229B5B883230"
+        "MsmKey" = "8:_5FB10AC96D234F50887CE7FB3A9EF0B3"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_D035F2AF408C411F868F26D8250B2A2B"
+        "MsmKey" = "8:_979F5BC6BAE9487D82638BD286C10C0C"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_E5D0B43C58C94BDD9593F3E43DA70D21"
+        "MsmKey" = "8:_A4AB3E97ED10575935AE26C9313CF4D5"
+        "OwnerKey" = "8:_0453B1DE574F4D3D9ACBA6376E406B66"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_CFC355DA94094B74B51E20AFDA6842BF"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_EC62807FD3D8D0C542EC089EBE5B7D5F"
-        "OwnerKey" = "8:_407C1D397A24416BBF09FA5456EABA6C"
+        "MsmKey" = "8:_E20B6EDDA71D444E9F00B3C10876FD01"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F665C871F8F342FB870AC7A0A8DDF58C"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_407C1D397A24416BBF09FA5456EABA6C"
+        "OwnerKey" = "8:_A4AB3E97ED10575935AE26C9313CF4D5"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_EC62807FD3D8D0C542EC089EBE5B7D5F"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_6F9BFC8294C38EE39729374AF1D6DFBC"
+        "OwnerKey" = "8:_0453B1DE574F4D3D9ACBA6376E406B66"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -105,7 +105,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:Debug\\Setup1.msi"
+        "OutputFilename" = "8:Debug\\Grade Calculator Setup.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -115,29 +115,13 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
-            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
-            {
-            "Enabled" = "11:TRUE"
-            "PromptEnabled" = "11:TRUE"
-            "PrerequisitesLocation" = "2:1"
-            "Url" = "8:"
-            "ComponentsUrl" = "8:"
-                "Items"
-                {
-                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.5"
-                    {
-                    "Name" = "8:Microsoft .NET Framework 4.5 (x86 and x64)"
-                    "ProductCode" = "8:.NETFramework,Version=v4.5"
-                    }
-                }
-            }
         }
         "Release"
         {
         "DisplayName" = "8:Release"
         "IsDebugOnly" = "11:FALSE"
         "IsReleaseOnly" = "11:TRUE"
-        "OutputFilename" = "8:Release\\Setup1.msi"
+        "OutputFilename" = "8:Release\\Grade Calculator Setup.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -147,22 +131,6 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
-            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
-            {
-            "Enabled" = "11:TRUE"
-            "PromptEnabled" = "11:TRUE"
-            "PrerequisitesLocation" = "2:1"
-            "Url" = "8:"
-            "ComponentsUrl" = "8:"
-                "Items"
-                {
-                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.5"
-                    {
-                    "Name" = "8:Microsoft .NET Framework 4.5 (x86 and x64)"
-                    "ProductCode" = "8:.NETFramework,Version=v4.5"
-                    }
-                }
-            }
         }
     }
     "Deployable"
@@ -180,7 +148,7 @@
         {
             "LaunchCondition"
             {
-                "{A06ECF26-33A3-4562-8140-9B0E340D4F24}:_08E926FCE04D49549CB99C7655126130"
+                "{A06ECF26-33A3-4562-8140-9B0E340D4F24}:_6E35AD616CE040A19516B5D1F28A88BE"
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
@@ -192,12 +160,12 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_166ED037E23347B2801BFD9C1CA7E8DE"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_09451A6E985848C18119823DA2F4D2B2"
             {
-            "SourcePath" = "8:..\\Alarm Clock\\bin\\Debug\\Sounds\\Alarm Sound2.mp3"
-            "TargetName" = "8:Alarm Sound2.mp3"
+            "SourcePath" = "8:..\\Grade Calculator\\bin\\Debug\\Icons\\settings.ico"
+            "TargetName" = "8:settings.ico"
             "Tag" = "8:"
-            "Folder" = "8:_ED2B5252773E4B8BA073E6BFB6D91651"
+            "Folder" = "8:_D29C95096D464B829EC51D709CF6495B"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -212,12 +180,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4B6F4FF1F4584BECB85CE0FE7958A7D3"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1A45C53B8D3C4104B47DC7C69774CB8A"
             {
-            "SourcePath" = "8:..\\Alarm Clock\\bin\\Debug\\Icons\\clock.png"
-            "TargetName" = "8:clock.png"
+            "SourcePath" = "8:..\\Grade Calculator\\bin\\Debug\\Icons\\save.ico"
+            "TargetName" = "8:save.ico"
             "Tag" = "8:"
-            "Folder" = "8:_BEF0B0E388CC42BDAB10DFE99FE4ADA5"
+            "Folder" = "8:_D29C95096D464B829EC51D709CF6495B"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -232,12 +200,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4E383C5F4B8D47E9892E16ED74ACD8A8"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_248FD8EAF5404717B8860937ADA7BE9B"
             {
-            "SourcePath" = "8:..\\Alarm Clock\\bin\\Debug\\Icons\\plus.png"
-            "TargetName" = "8:plus.png"
+            "SourcePath" = "8:..\\Grade Calculator\\bin\\Debug\\Icons\\lesson.ico"
+            "TargetName" = "8:lesson.ico"
             "Tag" = "8:"
-            "Folder" = "8:_BEF0B0E388CC42BDAB10DFE99FE4ADA5"
+            "Folder" = "8:_D29C95096D464B829EC51D709CF6495B"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -252,12 +220,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5AB7419B389E4AF4BDB6752C8BF30571"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_258D619C15DE4A1E91D0B1378D0ADDC4"
             {
-            "SourcePath" = "8:..\\Alarm Clock\\bin\\Debug\\Icons\\cancel.png"
-            "TargetName" = "8:cancel.png"
+            "SourcePath" = "8:..\\Grade Calculator\\bin\\Debug\\Icons\\reset.png"
+            "TargetName" = "8:reset.png"
             "Tag" = "8:"
-            "Folder" = "8:_BEF0B0E388CC42BDAB10DFE99FE4ADA5"
+            "Folder" = "8:_D29C95096D464B829EC51D709CF6495B"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -272,14 +240,74 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_6F9BFC8294C38EE39729374AF1D6DFBC"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3F512F63A2C64DAEB542D32EE8D82395"
+            {
+            "SourcePath" = "8:..\\Grade Calculator\\bin\\Debug\\Icons\\clear.png"
+            "TargetName" = "8:clear.png"
+            "Tag" = "8:"
+            "Folder" = "8:_D29C95096D464B829EC51D709CF6495B"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5FB10AC96D234F50887CE7FB3A9EF0B3"
+            {
+            "SourcePath" = "8:..\\Grade Calculator\\bin\\Debug\\Icons\\delete.png"
+            "TargetName" = "8:delete.png"
+            "Tag" = "8:"
+            "Folder" = "8:_D29C95096D464B829EC51D709CF6495B"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_979F5BC6BAE9487D82638BD286C10C0C"
+            {
+            "SourcePath" = "8:..\\Grade Calculator\\bin\\Debug\\Icons\\add.ico"
+            "TargetName" = "8:add.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_D29C95096D464B829EC51D709CF6495B"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A4AB3E97ED10575935AE26C9313CF4D5"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
                 "ScatterAssemblies"
                 {
-                    "_6F9BFC8294C38EE39729374AF1D6DFBC"
+                    "_A4AB3E97ED10575935AE26C9313CF4D5"
                     {
                     "Name" = "8:System.Net.Http.dll"
                     "Attributes" = "3:512"
@@ -288,7 +316,7 @@
             "SourcePath" = "8:System.Net.Http.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_1E4E7B7C315644769D22E7D89C1AFD37"
+            "Folder" = "8:_41C81252F8434B69AE070A303AA64A49"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -303,12 +331,12 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8B32321036454A8B840367F850C60C4C"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_CFC355DA94094B74B51E20AFDA6842BF"
             {
-            "SourcePath" = "8:..\\Alarm Clock\\bin\\Debug\\Icons\\clock.ico"
-            "TargetName" = "8:clock.ico"
+            "SourcePath" = "8:..\\Grade Calculator\\bin\\Debug\\Icons\\remove.png"
+            "TargetName" = "8:remove.png"
             "Tag" = "8:"
-            "Folder" = "8:_BEF0B0E388CC42BDAB10DFE99FE4ADA5"
+            "Folder" = "8:_D29C95096D464B829EC51D709CF6495B"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -323,12 +351,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_CA55C36B680C4C1C8435229B5B883230"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E20B6EDDA71D444E9F00B3C10876FD01"
             {
-            "SourcePath" = "8:..\\Alarm Clock\\bin\\Debug\\Icons\\settings.ico"
-            "TargetName" = "8:settings.ico"
+            "SourcePath" = "8:..\\Grade Calculator\\bin\\Debug\\Icons\\university.ico"
+            "TargetName" = "8:university.ico"
             "Tag" = "8:"
-            "Folder" = "8:_BEF0B0E388CC42BDAB10DFE99FE4ADA5"
+            "Folder" = "8:_D29C95096D464B829EC51D709CF6495B"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -343,12 +371,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D035F2AF408C411F868F26D8250B2A2B"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F665C871F8F342FB870AC7A0A8DDF58C"
             {
-            "SourcePath" = "8:..\\Alarm Clock\\bin\\Debug\\Sounds\\Alarm Sound1.mp3"
-            "TargetName" = "8:Alarm Sound1.mp3"
+            "SourcePath" = "8:..\\Grade Calculator\\bin\\Debug\\Icons\\add.png"
+            "TargetName" = "8:add.png"
             "Tag" = "8:"
-            "Folder" = "8:_ED2B5252773E4B8BA073E6BFB6D91651"
+            "Folder" = "8:_D29C95096D464B829EC51D709CF6495B"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -361,57 +389,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E5D0B43C58C94BDD9593F3E43DA70D21"
-            {
-            "SourcePath" = "8:..\\Alarm Clock\\bin\\Debug\\Icons\\counter2.png"
-            "TargetName" = "8:counter2.png"
-            "Tag" = "8:"
-            "Folder" = "8:_BEF0B0E388CC42BDAB10DFE99FE4ADA5"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_EC62807FD3D8D0C542EC089EBE5B7D5F"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:NAudio, Version=1.7.3.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_EC62807FD3D8D0C542EC089EBE5B7D5F"
-                    {
-                    "Name" = "8:NAudio.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:NAudio.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_1E4E7B7C315644769D22E7D89C1AFD37"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
         }
@@ -420,58 +397,47 @@
         }
         "Folder"
         {
-            "{3C67513D-01DD-4637-8A68-80971EB9504F}:_1E4E7B7C315644769D22E7D89C1AFD37"
+            "{3C67513D-01DD-4637-8A68-80971EB9504F}:_41C81252F8434B69AE070A303AA64A49"
             {
             "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
             "Name" = "8:#1925"
-            "AlwaysCreate" = "11:TRUE"
+            "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Property" = "8:TARGETDIR"
                 "Folders"
                 {
-                    "{9EF0B969-E518-4E46-987F-47570745A589}:_BEF0B0E388CC42BDAB10DFE99FE4ADA5"
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_D29C95096D464B829EC51D709CF6495B"
                     {
                     "Name" = "8:Icons"
                     "AlwaysCreate" = "11:FALSE"
                     "Condition" = "8:"
                     "Transitive" = "11:FALSE"
-                    "Property" = "8:_AEB2773BEDC941358B15876C61369648"
-                        "Folders"
-                        {
-                        }
-                    }
-                    "{9EF0B969-E518-4E46-987F-47570745A589}:_ED2B5252773E4B8BA073E6BFB6D91651"
-                    {
-                    "Name" = "8:Sounds"
-                    "AlwaysCreate" = "11:FALSE"
-                    "Condition" = "8:"
-                    "Transitive" = "11:FALSE"
-                    "Property" = "8:_F2FA128134D34B52B9EE2303E9DA988B"
+                    "Property" = "8:_4BF3580939F94D1080E689060515380B"
                         "Folders"
                         {
                         }
                     }
                 }
             }
-            "{1525181F-901A-416C-8A58-119130FE478E}:_9DDF4D7A59E249269299FE3EEE061981"
+            "{1525181F-901A-416C-8A58-119130FE478E}:_54AF44EB83104A20BB56ACC85F22CECC"
             {
-            "Name" = "8:#1919"
-            "AlwaysCreate" = "11:TRUE"
+            "Name" = "8:#1916"
+            "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
-            "Property" = "8:ProgramMenuFolder"
+            "Property" = "8:DesktopFolder"
                 "Folders"
                 {
                 }
             }
-            "{1525181F-901A-416C-8A58-119130FE478E}:_B0065A49BCBA44E6A766498860F3EAB2"
+            "{1525181F-901A-416C-8A58-119130FE478E}:_E8F193386AB94631857E913D140E51CC"
             {
-            "Name" = "8:#1916"
-            "AlwaysCreate" = "11:TRUE"
+            "Name" = "8:#1919"
+            "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
-            "Property" = "8:DesktopFolder"
+            "Property" = "8:ProgramMenuFolder"
                 "Folders"
                 {
                 }
@@ -491,20 +457,20 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:Alarm Clock"
-        "ProductCode" = "8:{E6BB6B46-F6DB-410E-B72C-B8C9278F6B28}"
-        "PackageCode" = "8:{A4B2C1B5-7743-4184-9B41-859A27AFA8BB}"
-        "UpgradeCode" = "8:{F861F8B5-91E2-4620-9FC9-B618314638C3}"
+        "ProductName" = "8:Grade Calculator"
+        "ProductCode" = "8:{A7D90193-378C-48CF-ABC8-6E3B4C59D9E3}"
+        "PackageCode" = "8:{E14E42A2-2AFE-4598-9E51-0BC672D6C537}"
+        "UpgradeCode" = "8:{6537F387-C768-42FC-B5EF-0F4B87D13308}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.0"
+        "ProductVersion" = "8:1.3.0"
         "Manufacturer" = "8:Aslan Software"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:Setup1"
+        "Title" = "8:Grade Calculator Setup"
         "Subject" = "8:"
         "ARPCONTACT" = "8:Barış Aslan"
         "Keywords" = "8:"
@@ -525,7 +491,7 @@
             {
                 "Keys"
                 {
-                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_7E8FF14FBC454BFB88E4FAFCC0F2DA35"
+                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_C1230D5AF42D49A2B4AB68611BE24ED8"
                     {
                     "Name" = "8:Software"
                     "Condition" = "8:"
@@ -534,7 +500,7 @@
                     "Transitive" = "11:FALSE"
                         "Keys"
                         {
-                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_DB0B98B3CF314917B9C1EF4BB639B632"
+                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_8C17D77FBEAB4C79A62CD6ADF236585A"
                             {
                             "Name" = "8:[Manufacturer]"
                             "Condition" = "8:"
@@ -559,7 +525,7 @@
             {
                 "Keys"
                 {
-                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_886E393A02994FEDA69B0FB75D62628A"
+                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_4A0DC1AF57CD4266BBE3EEB399857C70"
                     {
                     "Name" = "8:Software"
                     "Condition" = "8:"
@@ -568,7 +534,7 @@
                     "Transitive" = "11:FALSE"
                         "Keys"
                         {
-                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_48DD55C6F8024E199821E49D9819C918"
+                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_CF8CE5BDD6784644876EC0E2E609F0B4"
                             {
                             "Name" = "8:[Manufacturer]"
                             "Condition" = "8:"
@@ -613,67 +579,51 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_0945EA1E265C4BD29C8655D82C0075B6"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_2126D800783C41C5A4A3A5F1F52D0F59"
             {
-            "Name" = "8:Alarm Clock"
+            "Name" = "8:Grade Calculator"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_407C1D397A24416BBF09FA5456EABA6C"
-            "Folder" = "8:_B0065A49BCBA44E6A766498860F3EAB2"
-            "WorkingFolder" = "8:_1E4E7B7C315644769D22E7D89C1AFD37"
-            "Icon" = "8:_8B32321036454A8B840367F850C60C4C"
+            "Target" = "8:_0453B1DE574F4D3D9ACBA6376E406B66"
+            "Folder" = "8:_E8F193386AB94631857E913D140E51CC"
+            "WorkingFolder" = "8:_41C81252F8434B69AE070A303AA64A49"
+            "Icon" = "8:_E20B6EDDA71D444E9F00B3C10876FD01"
             "Feature" = "8:"
             }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_E1B4BF1F53354D94970D38BB34FBB887"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_C70CB6564FC941E0906FF3D6DA06335F"
             {
-            "Name" = "8:Alarm Clock"
+            "Name" = "8:Grade Calculator"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_407C1D397A24416BBF09FA5456EABA6C"
-            "Folder" = "8:_9DDF4D7A59E249269299FE3EEE061981"
-            "WorkingFolder" = "8:_1E4E7B7C315644769D22E7D89C1AFD37"
-            "Icon" = "8:_8B32321036454A8B840367F850C60C4C"
+            "Target" = "8:_0453B1DE574F4D3D9ACBA6376E406B66"
+            "Folder" = "8:_54AF44EB83104A20BB56ACC85F22CECC"
+            "WorkingFolder" = "8:_41C81252F8434B69AE070A303AA64A49"
+            "Icon" = "8:_E20B6EDDA71D444E9F00B3C10876FD01"
             "Feature" = "8:"
             }
         }
         "UserInterface"
         {
-            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_191C32E1B39E4D13B3E25217F3B37A5B"
+            "{2479F3F5-0309-486D-8047-8187E2CE5BA0}:_3E750EE358244389B58BE7C252379F59"
+            {
+            "UseDynamicProperties" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "SourcePath" = "8:<VsdDialogDir>\\VsdUserInterface.wim"
+            }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_64A32F0CAEFF40159D7F6E6D00CED426"
             {
             "Name" = "8:#1900"
             "Sequence" = "3:1"
             "Attributes" = "3:1"
                 "Dialogs"
                 {
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_2871BB3316AE4A19BC4513FF15600876"
-                    {
-                    "Sequence" = "3:300"
-                    "DisplayName" = "8:Confirm Installation"
-                    "UseDynamicProperties" = "11:TRUE"
-                    "IsDependency" = "11:FALSE"
-                    "SourcePath" = "8:<VsdDialogDir>\\VsdConfirmDlg.wid"
-                        "Properties"
-                        {
-                            "BannerBitmap"
-                            {
-                            "Name" = "8:BannerBitmap"
-                            "DisplayName" = "8:#1001"
-                            "Description" = "8:#1101"
-                            "Type" = "3:8"
-                            "ContextData" = "8:Bitmap"
-                            "Attributes" = "3:4"
-                            "Setting" = "3:1"
-                            "UsePlugInResources" = "11:TRUE"
-                            }
-                        }
-                    }
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_9E838A969B9344F2BFC670D56F8FFDE5"
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_3CF27D3A9391435CB4311919FEC48BE6"
                     {
                     "Sequence" = "3:200"
                     "DisplayName" = "8:Installation Folder"
@@ -708,7 +658,29 @@
                             }
                         }
                     }
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_BFF69127D9B1481D9130FEE9175ABAF0"
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_427049FF9E3C472D90A0C51D3EAB49BE"
+                    {
+                    "Sequence" = "3:300"
+                    "DisplayName" = "8:Confirm Installation"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdConfirmDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_BB15EA32858A46ECB961E7D63524DD2C"
                     {
                     "Sequence" = "3:100"
                     "DisplayName" = "8:Welcome"
@@ -758,20 +730,64 @@
                     }
                 }
             }
-            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_3913370455374A109969BFDFCBA2981F"
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_6C9B0139E7364F779C18845F661E3745"
             {
-            "Name" = "8:#1900"
-            "Sequence" = "3:2"
-            "Attributes" = "3:1"
+            "Name" = "8:#1902"
+            "Sequence" = "3:1"
+            "Attributes" = "3:3"
                 "Dialogs"
                 {
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_5DC8B4C91C784E78AFDFB0E299FD4073"
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_AC5C0F9009A14020B19174D11B8F663D"
                     {
-                    "Sequence" = "3:200"
-                    "DisplayName" = "8:Installation Folder"
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:Finished"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
-                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminFolderDlg.wid"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdFinishedDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "UpdateText"
+                            {
+                            "Name" = "8:UpdateText"
+                            "DisplayName" = "8:#1058"
+                            "Description" = "8:#1158"
+                            "Type" = "3:15"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:1"
+                            "Value" = "8:#1258"
+                            "DefaultValue" = "8:#1258"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
+            }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_9BE617CE8CB14BCCACAC911DE6796FC2"
+            {
+            "Name" = "8:#1902"
+            "Sequence" = "3:2"
+            "Attributes" = "3:3"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_9F6D347AB71A4AEAB7051C7AD7CE86CB"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:Finished"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminFinishedDlg.wid"
                         "Properties"
                         {
                             "BannerBitmap"
@@ -787,7 +803,66 @@
                             }
                         }
                     }
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_870C30A69FC240A9BE71E9F63ECFAE89"
+                }
+            }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_9D371F21373F4FCBBB8229B747F348A7"
+            {
+            "Name" = "8:#1901"
+            "Sequence" = "3:1"
+            "Attributes" = "3:2"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_9139BA192EFA4D9488DF232737DF434C"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:Progress"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdProgressDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "ShowProgress"
+                            {
+                            "Name" = "8:ShowProgress"
+                            "DisplayName" = "8:#1009"
+                            "Description" = "8:#1109"
+                            "Type" = "3:5"
+                            "ContextData" = "8:1;True=1;False=0"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:0"
+                            "Value" = "3:1"
+                            "DefaultValue" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
+            }
+            "{2479F3F5-0309-486D-8047-8187E2CE5BA0}:_CD4EAEBD37EA48C8A94FA7D939659E1B"
+            {
+            "UseDynamicProperties" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "SourcePath" = "8:<VsdDialogDir>\\VsdBasicDialogs.wim"
+            }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_DAC7C95AC0C543259FE440DBE6B89F1A"
+            {
+            "Name" = "8:#1900"
+            "Sequence" = "3:2"
+            "Attributes" = "3:1"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_4BAF98E5A0034EC1886268E8F1D0AA72"
                     {
                     "Sequence" = "3:300"
                     "DisplayName" = "8:Confirm Installation"
@@ -809,7 +884,29 @@
                             }
                         }
                     }
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_9220CEBB97E347719BAEACFA84EB6AC9"
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_592C34BF8EF1486BA77D31790E868A3D"
+                    {
+                    "Sequence" = "3:200"
+                    "DisplayName" = "8:Installation Folder"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminFolderDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_6790BC4E29514BD499923405A2675A76"
                     {
                     "Sequence" = "3:100"
                     "DisplayName" = "8:Welcome"
@@ -859,145 +956,14 @@
                     }
                 }
             }
-            "{2479F3F5-0309-486D-8047-8187E2CE5BA0}:_54915268D3AF486EACE384BB0F5D2637"
-            {
-            "UseDynamicProperties" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "SourcePath" = "8:<VsdDialogDir>\\VsdUserInterface.wim"
-            }
-            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_6250BCF3E26945D08C28D38F3B8D2FCD"
-            {
-            "Name" = "8:#1902"
-            "Sequence" = "3:2"
-            "Attributes" = "3:3"
-                "Dialogs"
-                {
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_F358A6BB0A364645B6034ABB14071B88"
-                    {
-                    "Sequence" = "3:100"
-                    "DisplayName" = "8:Finished"
-                    "UseDynamicProperties" = "11:TRUE"
-                    "IsDependency" = "11:FALSE"
-                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminFinishedDlg.wid"
-                        "Properties"
-                        {
-                            "BannerBitmap"
-                            {
-                            "Name" = "8:BannerBitmap"
-                            "DisplayName" = "8:#1001"
-                            "Description" = "8:#1101"
-                            "Type" = "3:8"
-                            "ContextData" = "8:Bitmap"
-                            "Attributes" = "3:4"
-                            "Setting" = "3:1"
-                            "UsePlugInResources" = "11:TRUE"
-                            }
-                        }
-                    }
-                }
-            }
-            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_9B85FF1CA4F54EBFAACD3832676C5473"
-            {
-            "Name" = "8:#1901"
-            "Sequence" = "3:1"
-            "Attributes" = "3:2"
-                "Dialogs"
-                {
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_00DF81DA18394DCDBCFA5A4AEFD1668B"
-                    {
-                    "Sequence" = "3:100"
-                    "DisplayName" = "8:Progress"
-                    "UseDynamicProperties" = "11:TRUE"
-                    "IsDependency" = "11:FALSE"
-                    "SourcePath" = "8:<VsdDialogDir>\\VsdProgressDlg.wid"
-                        "Properties"
-                        {
-                            "BannerBitmap"
-                            {
-                            "Name" = "8:BannerBitmap"
-                            "DisplayName" = "8:#1001"
-                            "Description" = "8:#1101"
-                            "Type" = "3:8"
-                            "ContextData" = "8:Bitmap"
-                            "Attributes" = "3:4"
-                            "Setting" = "3:1"
-                            "UsePlugInResources" = "11:TRUE"
-                            }
-                            "ShowProgress"
-                            {
-                            "Name" = "8:ShowProgress"
-                            "DisplayName" = "8:#1009"
-                            "Description" = "8:#1109"
-                            "Type" = "3:5"
-                            "ContextData" = "8:1;True=1;False=0"
-                            "Attributes" = "3:0"
-                            "Setting" = "3:0"
-                            "Value" = "3:1"
-                            "DefaultValue" = "3:1"
-                            "UsePlugInResources" = "11:TRUE"
-                            }
-                        }
-                    }
-                }
-            }
-            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_BD8FABC1ADA84B03871AF6F389A84D7F"
-            {
-            "Name" = "8:#1902"
-            "Sequence" = "3:1"
-            "Attributes" = "3:3"
-                "Dialogs"
-                {
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_46451B29EBF1426A9C92C027CACE0FCA"
-                    {
-                    "Sequence" = "3:100"
-                    "DisplayName" = "8:Finished"
-                    "UseDynamicProperties" = "11:TRUE"
-                    "IsDependency" = "11:FALSE"
-                    "SourcePath" = "8:<VsdDialogDir>\\VsdFinishedDlg.wid"
-                        "Properties"
-                        {
-                            "BannerBitmap"
-                            {
-                            "Name" = "8:BannerBitmap"
-                            "DisplayName" = "8:#1001"
-                            "Description" = "8:#1101"
-                            "Type" = "3:8"
-                            "ContextData" = "8:Bitmap"
-                            "Attributes" = "3:4"
-                            "Setting" = "3:1"
-                            "UsePlugInResources" = "11:TRUE"
-                            }
-                            "UpdateText"
-                            {
-                            "Name" = "8:UpdateText"
-                            "DisplayName" = "8:#1058"
-                            "Description" = "8:#1158"
-                            "Type" = "3:15"
-                            "ContextData" = "8:"
-                            "Attributes" = "3:0"
-                            "Setting" = "3:1"
-                            "Value" = "8:#1258"
-                            "DefaultValue" = "8:#1258"
-                            "UsePlugInResources" = "11:TRUE"
-                            }
-                        }
-                    }
-                }
-            }
-            "{2479F3F5-0309-486D-8047-8187E2CE5BA0}:_E7AA5FD30E4A432196DAE96264798384"
-            {
-            "UseDynamicProperties" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "SourcePath" = "8:<VsdDialogDir>\\VsdBasicDialogs.wim"
-            }
-            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_FFEED2E8C73245FC80708ED32E4288B6"
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_F680709EFB2148A886F0158669756AFA"
             {
             "Name" = "8:#1901"
             "Sequence" = "3:2"
             "Attributes" = "3:2"
                 "Dialogs"
                 {
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_4B21D089932F4F1E8167E70AADE8BF9A"
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_73BCFF9AF4234BA989DCE58EECF9C79A"
                     {
                     "Sequence" = "3:100"
                     "DisplayName" = "8:Progress"
@@ -1040,12 +1006,12 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_407C1D397A24416BBF09FA5456EABA6C"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_0453B1DE574F4D3D9ACBA6376E406B66"
             {
-            "SourcePath" = "8:..\\Alarm Clock\\obj\\Debug\\Alarm Clock.exe"
+            "SourcePath" = "8:..\\Grade Calculator\\obj\\Debug\\Grade Calculator.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_1E4E7B7C315644769D22E7D89C1AFD37"
+            "Folder" = "8:_41C81252F8434B69AE070A303AA64A49"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1062,7 +1028,7 @@
             "ProjectOutputGroupRegister" = "3:1"
             "OutputConfiguration" = "8:"
             "OutputGroupCanonicalName" = "8:Built"
-            "OutputProjectGuid" = "8:{680CDCAF-88FC-41DA-B4E1-6772A30D64EA}"
+            "OutputProjectGuid" = "8:{4037ED33-C525-44E0-A13A-E4A10F6950D5}"
             "ShowKeyOutput" = "11:TRUE"
                 "ExcludeFilters"
                 {

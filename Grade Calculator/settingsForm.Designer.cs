@@ -201,6 +201,7 @@
             0,
             0,
             0});
+            this.nmrFirst1.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // txtLetter9
             // 
@@ -224,6 +225,7 @@
             0,
             0,
             0});
+            this.nmrLast1.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // label1
             // 
@@ -257,6 +259,7 @@
             0,
             0,
             0});
+            this.nmrFirst2.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // nmrLast2
             // 
@@ -270,6 +273,7 @@
             0,
             0,
             0});
+            this.nmrLast2.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // label5
             // 
@@ -293,6 +297,7 @@
             0,
             0,
             0});
+            this.nmrFirst3.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // nmrLast3
             // 
@@ -306,6 +311,7 @@
             0,
             0,
             0});
+            this.nmrLast3.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // label6
             // 
@@ -329,6 +335,7 @@
             0,
             0,
             0});
+            this.nmrFirst4.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // nmrLast4
             // 
@@ -342,6 +349,7 @@
             0,
             0,
             0});
+            this.nmrLast4.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // label7
             // 
@@ -365,6 +373,7 @@
             0,
             0,
             0});
+            this.nmrFirst5.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // nmrLast5
             // 
@@ -378,6 +387,7 @@
             0,
             0,
             0});
+            this.nmrLast5.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // label8
             // 
@@ -411,6 +421,7 @@
             0,
             0,
             0});
+            this.nmrFirst6.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // label10
             // 
@@ -434,6 +445,7 @@
             0,
             0,
             0});
+            this.nmrFirst7.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // label11
             // 
@@ -457,6 +469,7 @@
             0,
             0,
             0});
+            this.nmrFirst8.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // nmrFirst9
             // 
@@ -465,6 +478,7 @@
             this.nmrFirst9.Name = "nmrFirst9";
             this.nmrFirst9.Size = new System.Drawing.Size(55, 29);
             this.nmrFirst9.TabIndex = 24;
+            this.nmrFirst9.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // nmrLast6
             // 
@@ -478,6 +492,7 @@
             0,
             0,
             0});
+            this.nmrLast6.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // nmrLast7
             // 
@@ -491,6 +506,7 @@
             0,
             0,
             0});
+            this.nmrLast7.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // nmrLast8
             // 
@@ -504,6 +520,7 @@
             0,
             0,
             0});
+            this.nmrLast8.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // nmrLast9
             // 
@@ -517,6 +534,7 @@
             0,
             0,
             0});
+            this.nmrLast9.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             // 
             // btnCancel
             // 
@@ -592,6 +610,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Settings";
             this.Load += new System.EventHandler(this.settingsForm_Load);
+            this.Enter += new System.EventHandler(this.NumericUpDown_Enter);
             ((System.ComponentModel.ISupportInitialize)(this.nmrFirst1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmrLast1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmrFirst2)).EndInit();
