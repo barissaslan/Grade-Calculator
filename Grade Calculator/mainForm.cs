@@ -1,5 +1,4 @@
-﻿using Exam_Mark_Calculater;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
@@ -13,9 +12,11 @@ namespace Grade_Calculator
             InitializeComponent();
         }
         settingsForm settingsForm = new settingsForm();
+        #region Dynamic RoundButtons
         RoundButton btnAddRow = new RoundButton(Properties.Resources.add, 30, 30);
         RoundButton btnRemoveRow = new RoundButton(Properties.Resources.remove, 30, 30);
         RoundButton btnResetValue = new RoundButton(Properties.Resources.reset, 30, 30);
+        #endregion
         // for calculating to extra exams or quizes
         List<NumericUpDown> listNmrc = new List<NumericUpDown>();
         List<NumericUpDown> listNmrcWeight = new List<NumericUpDown>();
@@ -23,22 +24,19 @@ namespace Grade_Calculator
         int tabIndex;
 
         private double averageGrade;
-        public double AverageGrade
-        {
-            get { return Math.Round(averageGrade); }
-            set { averageGrade = value; }
-        }
 
         private void mainForm_Load(object sender, EventArgs e)
         {
+            #region Dynamic RoundButtons added to panels
             btnAddRow.Click += BtnAddRow_Click;
             panelAddRow.Controls.Add(btnAddRow);
 
             btnRemoveRow.Click += BtnRemoveRow_Click;
             panelRemoveRow.Controls.Add(btnRemoveRow);
 
-            btnResetValue.Click += BtnResetRows_Click;
+            btnResetValue.Click += BtnResetValues_Click;
             panelResetValue.Controls.Add(btnResetValue);
+            #endregion
 
             #region Tab Index
             tabIndex = nmrWeight2.TabIndex;
@@ -46,7 +44,10 @@ namespace Grade_Calculator
             panelRemoveRow.TabIndex = 2 + tabIndex;
             panelResetValue.TabIndex = 3 + tabIndex;
             btnCalculate.TabIndex = 4 + tabIndex;
+            btnSave.TabIndex = 5 + tabIndex;
             #endregion
+
+            FileLesson.checkFiles();
         }
 
         private void btnCalculate_Click(object sender, EventArgs e)
@@ -59,9 +60,39 @@ namespace Grade_Calculator
                 averageGrade += (double)(listNmrc[i].Value * listNmrcWeight[i].Value) / 100.0;
             }
 
-            lblGrade.Text = averageGrade.ToString();
-            lblLetterGrade.Text = getLetterGrade(AverageGrade);
+            lblGrade.Text = averageGrade.ToString("00.00");
+            lblLetterGrade.Text = getLetterGrade(averageGrade);
         }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            btnCalculate_Click(sender, e);
+            lessonForm lessonForm = new lessonForm();
+            lessonForm.txtGrade.Text = lblGrade.Text;
+            lessonForm.txtLetter.Text = lblLetterGrade.Text;
+            if (lessonForm.ShowDialog() == DialogResult.OK)
+            {
+                string name = lessonForm.txtLessonName.Text.Trim();
+                string letter = getLetterGrade(averageGrade);
+                FileLesson.writeLesson(name, averageGrade, letter);
+            }
+        }
+
+        private void showLessons_Click(object sender, EventArgs e)
+        {
+            gradeForm gradeForm = new gradeForm();
+            gradeForm.ShowDialog();
+        }
+
+        private void settings_Click(object sender, EventArgs e)
+        {
+            if (settingsForm.ShowDialog() == DialogResult.OK)
+            {
+                updateSettings();
+            }
+        }
+
+        #region Dynamic Controls
 
         private void BtnAddRow_Click(object sender, EventArgs e)
         {
@@ -120,7 +151,7 @@ namespace Grade_Calculator
             panelResetValue.Location = new Point(x + 80, y - 35);
         }
 
-        private void BtnResetRows_Click(object sender, EventArgs e)
+        private void BtnResetValues_Click(object sender, EventArgs e)
         {
             foreach (Control item in this.Controls)
             {
@@ -133,13 +164,7 @@ namespace Grade_Calculator
             nmr1.Focus();
         }
 
-        private void settings_Click(object sender, EventArgs e)
-        {
-            if (settingsForm.ShowDialog() == DialogResult.OK)
-            {
-                updateSettings();
-            }
-        }
+        #endregion
 
         private void updateSettings()
         {
@@ -183,9 +208,7 @@ namespace Grade_Calculator
             nmr.Select(0, nmr.Value.ToString().Length);
         }
 
-       
-
-        private string getLetterGrade(double averageGrade)
+        public static string getLetterGrade(double averageGrade)
         {
             int[] max = new int[9];
             string[] letter = new string[9];
@@ -211,6 +234,7 @@ namespace Grade_Calculator
                 panelRemoveRow.TabIndex += 2;
                 panelResetValue.TabIndex += 2;
                 btnCalculate.TabIndex += 2;
+                btnSave.TabIndex += 2;
             }
             else
             {
@@ -218,6 +242,7 @@ namespace Grade_Calculator
                 panelRemoveRow.TabIndex -= 2;
                 panelResetValue.TabIndex -= 2;
                 btnCalculate.TabIndex -= 2;
+                btnSave.TabIndex -= 2;
             }
 
         }

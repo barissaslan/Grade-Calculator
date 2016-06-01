@@ -43,15 +43,19 @@
             this.panelAddRow = new System.Windows.Forms.Panel();
             this.panelResetValue = new System.Windows.Forms.Panel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolShowLessons = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolSettings = new System.Windows.Forms.ToolStripButton();
             this.lblGrade = new System.Windows.Forms.Label();
             this.lblLetterGrade = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.contextAddRow = new System.Windows.Forms.ToolStripMenuItem();
             this.contextDeleteRow = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextClearRows = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextClearValues = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.contextCalculate = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.contextSave = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.nmrWeight2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmrWeight1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmr2)).BeginInit();
@@ -123,7 +127,6 @@
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(130, 35);
             this.btnCalculate.TabIndex = 7;
-            this.btnCalculate.TabStop = false;
             this.btnCalculate.Text = "Calculate";
             this.btnCalculate.UseVisualStyleBackColor = true;
             this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
@@ -174,13 +177,31 @@
             // 
             // toolStrip1
             // 
+            this.toolStrip1.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolShowLessons,
+            this.toolStripSeparator2,
             this.toolSettings});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(397, 25);
             this.toolStrip1.TabIndex = 30;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolShowLessons
+            // 
+            this.toolShowLessons.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolShowLessons.Image = global::Grade_Calculator.Properties.Resources.lesson;
+            this.toolShowLessons.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolShowLessons.Name = "toolShowLessons";
+            this.toolShowLessons.Size = new System.Drawing.Size(23, 22);
+            this.toolShowLessons.Text = "Show Lessons";
+            this.toolShowLessons.Click += new System.EventHandler(this.showLessons_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // toolSettings
             // 
@@ -215,44 +236,68 @@
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.contextAddRow,
             this.contextDeleteRow,
-            this.contextClearRows,
+            this.contextClearValues,
             this.toolStripSeparator1,
-            this.contextCalculate});
+            this.contextCalculate,
+            this.contextSave});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(134, 98);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(180, 120);
             // 
             // contextAddRow
             // 
             this.contextAddRow.Name = "contextAddRow";
-            this.contextAddRow.Size = new System.Drawing.Size(133, 22);
+            this.contextAddRow.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
+            this.contextAddRow.Size = new System.Drawing.Size(179, 22);
             this.contextAddRow.Text = "Add Row";
             this.contextAddRow.Click += new System.EventHandler(this.BtnAddRow_Click);
             // 
             // contextDeleteRow
             // 
             this.contextDeleteRow.Name = "contextDeleteRow";
-            this.contextDeleteRow.Size = new System.Drawing.Size(133, 22);
+            this.contextDeleteRow.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
+            this.contextDeleteRow.Size = new System.Drawing.Size(179, 22);
             this.contextDeleteRow.Text = "Delete Row";
             this.contextDeleteRow.Click += new System.EventHandler(this.BtnRemoveRow_Click);
             // 
-            // contextClearRows
+            // contextClearValues
             // 
-            this.contextClearRows.Name = "contextClearRows";
-            this.contextClearRows.Size = new System.Drawing.Size(133, 22);
-            this.contextClearRows.Text = "Clear Rows";
-            this.contextClearRows.Click += new System.EventHandler(this.BtnResetRows_Click);
+            this.contextClearValues.Name = "contextClearValues";
+            this.contextClearValues.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
+            this.contextClearValues.Size = new System.Drawing.Size(179, 22);
+            this.contextClearValues.Text = "Clear Values";
+            this.contextClearValues.Click += new System.EventHandler(this.BtnResetValues_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(130, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(176, 6);
             // 
             // contextCalculate
             // 
             this.contextCalculate.Name = "contextCalculate";
-            this.contextCalculate.Size = new System.Drawing.Size(133, 22);
+            this.contextCalculate.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
+            this.contextCalculate.Size = new System.Drawing.Size(179, 22);
             this.contextCalculate.Text = "Calculate";
             this.contextCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnSave.Location = new System.Drawing.Point(150, 379);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(130, 35);
+            this.btnSave.TabIndex = 7;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // contextSave
+            // 
+            this.contextSave.Name = "contextSave";
+            this.contextSave.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.contextSave.Size = new System.Drawing.Size(179, 22);
+            this.contextSave.Text = "Save";
+            this.contextSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // mainForm
             // 
@@ -270,6 +315,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblGrade);
             this.Controls.Add(this.label);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -316,9 +362,13 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem contextAddRow;
         private System.Windows.Forms.ToolStripMenuItem contextDeleteRow;
-        private System.Windows.Forms.ToolStripMenuItem contextClearRows;
+        private System.Windows.Forms.ToolStripMenuItem contextClearValues;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem contextCalculate;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.ToolStripButton toolShowLessons;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem contextSave;
     }
 }
 
